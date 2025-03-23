@@ -6944,7 +6944,7 @@ LIMIT 1;
       `)],-1),dj={class:"row mb-3"},fj={class:"col d-flex"},pj=T("div",{class:"text-secondary"},[v(`
             For best results, use
             `),T("code",null,`
-              EXPLAIN (ANALYZE, COSTS, VERBOSE, BUFFERS, FORMAT JSON)
+              EXPLAIN (ANALYZE, SETTINGS, COSTS, TIMING, SUMMARY, WAL, VERBOSE, BUFFERS, FORMAT JSON)
             `),v(),T("br"),v(),T("em",null,"psql"),v(` users can export the plan to a file using
             `),T("code",null,"psql -XqAt -f explain.sql > analyze.json")],-1),hj={class:"dropdown ms-auto"},_j=T("button",{class:"btn btn-secondary dropdown-toggle",type:"button",id:"dropdownMenuButton","data-bs-toggle":"dropdown","aria-haspopup":"true","aria-expanded":"false"},`
               Sample Plans
